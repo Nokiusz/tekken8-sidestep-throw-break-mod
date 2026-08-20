@@ -4,4 +4,4 @@ General Sidestep Direction &amp; Throw Break UI
 
 https://tekkenmods.com/mod/4838/general-sidestep-direction-throw-break-ui-with-dlcs-working
 
-![mod showcase](./img/1.png)
+![mod showcase](./img/1.jpg)
