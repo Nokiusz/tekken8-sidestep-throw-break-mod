@@ -1,4 +1,3 @@
-// List of icon files in img/L (auto-generated from folder contents)
 const ICONS: string[] = [
   "T_UI_HUD_Character_Icon_L_aml.png",
   "T_UI_HUD_Character_Icon_L_ant.png",
@@ -44,25 +43,41 @@ const ICONS: string[] = [
   "T_UI_HUD_Character_Icon_R_knk.png",
 ];
 
-function buildCard(fileName: string): HTMLDivElement {
-  const card = document.createElement("div");
-  card.className = "icon-card";
+export default function Home() {
+  return (
+    <>
+      <header className="site-header">
+        <h1>
+          TEKKEN<span className="accent">8</span>
+        </h1>
+        <p className="subtitle">Sidestep Direction &amp; Throw Break Icons</p>
+      </header>
 
-  const img = document.createElement("img");
-  img.src = `img/L/${fileName}`;
-  img.alt = fileName
-    .replace("T_UI_HUD_Character_Icon_", "")
-    .replace(".png", "");
-  img.loading = "lazy";
+      <main className="icon-grid">
+        {ICONS.map((fileName) => (
+          <div className="icon-card" key={fileName}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`/img/L/${fileName}`}
+              alt={fileName.replace("T_UI_HUD_Character_Icon_", "").replace(".png", "")}
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </main>
 
-  card.appendChild(img);
-  return card;
-}
-
-const grid = document.getElementById("iconGrid") as HTMLDivElement | null;
-
-if (grid) {
-  for (const fileName of ICONS) {
-    grid.appendChild(buildCard(fileName));
-  }
+      <footer className="site-footer">
+        <p>
+          Icon set from{" "}
+          <a
+            href="https://tekkenmods.com/mod/4838/general-sidestep-direction-throw-break-ui-with-dlcs-working"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            General Sidestep Direction &amp; Throw Break UI
+          </a>
+        </p>
+      </footer>
+    </>
+  );
 }

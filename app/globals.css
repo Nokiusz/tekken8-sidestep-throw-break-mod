@@ -10,7 +10,8 @@
   --card-bg: #0d0d0f;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
