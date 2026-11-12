@@ -18,6 +18,7 @@ const ICONS: string[] = [
   "T_UI_HUD_Character_Icon_L_grl.png",
   "T_UI_HUD_Character_Icon_L_hms.png",
   "T_UI_HUD_Character_Icon_L_hrs.png",
+  "T_UI_HUD_Character_Icon_L_inu.png",
   "T_UI_HUD_Character_Icon_L_jly.png",
   "T_UI_HUD_Character_Icon_L_kal.png",
   "T_UI_HUD_Character_Icon_L_kgr.png",
